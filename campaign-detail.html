@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>MoonShot.co.th</title>
+    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,700&amp;display=swap&amp;subset=thai" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    -->
+  </head>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid"> 
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#top-navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="./IMG_URL/logo.png"></a><a class="notification" href="#"> <i class="fas fa-bell"></i><span class="number">99+</span></a>
+          <div class="notification-popup hidden">
+            <div class="header">
+              <p class="title">Notificaions</p>
+              <p class="clear"><a href="#">Clear</a></p>
+              <div class="clearfix"></div>
+            </div>
+            <div class="item-group">
+              <div class="item">
+                <p><strong>เปิดตัวโทรศัพท์มือถือ</strong></p>
+                <p>1 Day Remaining</p>
+              </div>
+              <div class="item">
+                <p><strong>เปิดตัวโทรศัพท์มือถือ</strong></p>
+                <p>3 Day Remaining</p>
+              </div>
+              <div class="item">
+                <p><strong>เปิดตัวโทรศัพท์มือถือ</strong></p>
+                <p>5 Day Remaining</p>
+              </div>
+            </div>
+            <div class="footer"><a class="close-popup" href="#">Close</a></div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="top-navbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Campaign </a></li>
+            <li><a href="#">Influencer</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./index.html">Logout</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse-->
+        <!-- /.container-fluid-->
+      </div>
+    </nav>
+  </header>
+  <body id="campaign-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-md-push-7 col-sm-3 col-sm-push-9">
+          <div class="influencer-next-timeline">
+            <h2>Influencer Timeline</h2>
+            <hr>
+            <div class="item">
+              <p><strong>Phukkhom BNK48</strong></p>
+              <p> <span class="date">01/02/2019</span>ส่ง Draft แรกให้ลูกค้า</p>
+            </div>
+            <div class="item">
+              <p><strong>Piam BNK48</strong></p>
+              <p> <span class="date">01/02/2019</span>ส่ง Draft แรกให้ลูกค้า</p>
+            </div>
+            <div class="item">
+              <p><strong>Music BNK48</strong></p>
+              <p> <span class="date">01/02/2019</span>ส่ง Draft แรกให้ลูกค้า</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-md-pull-5 col-sm-9 col-sm-pull-3"> 
+          <section class="campaign-header"> 
+            <div class="campaing-cover" style="background-image:url('./IMG_URL/cover-main.png')"></div>
+            <div class="campaign-detail">
+              <div class="row">
+                <div class="col-xs-8">
+                  <p class="category">Techonology</p>
+                </div>
+                <div class="col-xs-4">
+                  <div class="campaign-list-group"> 
+                    <p class="campaign-status inprocess">Inprocess</p>
+                    <p class="campaign-status done hidden">done</p>
+                    <p class="campaign-status cancelled hidden">cancelled</p>
+                  </div>
+                </div>
+              </div>
+              <h1>งานเปิดตัวมือถือ</h1>
+              <p class="description">This is not an invitation. It‘s a challenge. This is your chance to join thousands of coders, creators, and crazy ones this summer to do the</p>
+              <p class="manager">Campaign Manager: Perth, M</p>
+              <p class="date"><i class="fas fa-calendar"></i>03/06/2019 - 07/06/2019</p>
+              <hr><a class="secondary-btn" href="#" data-toggle="modal" data-target="#editcampaign-modal">Edit</a>
+            </div>
+          </section>
+          <section class="campaign-brief">
+            <div class="campaign-detail">
+              <div class="form-group">
+                <h2>Campaign Brief</h2>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="form-inline">
+                  <h2>Campaign Budget</h2>
+                  <div class="input-group">
+                    <input class="form-control" type="number" placeholder="Amount">
+                    <div class="input-group-addon">THB</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <h2>Scope of Works</h2>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <h2>Hashtag</h2>
+                <select class="select2 form-control" multiple="multiple">
+                  <option disabled>Type your Hashtag and press Enter.</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h2>Reference </h2>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="campaign-timeline">
+                <h2>Campaign Timeline</h2>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <label>Date</label>
+                  </div>
+                  <div class="col-xs-8">
+                    <label>Title</label>
+                  </div>
+                </div>
+                <div class="timeline-group">
+                  <div class="row item with-close">
+                    <div class="col-xs-4 no-margin-right">
+                      <div class="form-group date-picker"><i class="far fa-calendar-alt"></i>
+                        <input class="form-control" type="text" data-toggle="datepicker">
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text">
+                          <div class="input-group-addon"><a class="close" href="#"><i class="fas fa-times"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"><a class="add-new" href="#">+ Add Timeline</a></div>
+              </div>
+              <div class="upload-file-section">
+                <h2>Campaign Brief File</h2>
+                <div class="upload-file-group">
+                  <div class="upload-file with-close">
+                    <input type="file"><a class="upload" href="#">Select File</a>
+                    <p class="filename"> </p>
+                    <p class="filesize"></p><a class="close" href="#"><i class="fas fa-times"></i></a>
+                  </div>
+                </div>
+                <div class="add-upload-file"><a href="#">+ Add File</a></div>
+              </div>
+            </div>
+          </section>
+          <section class="campaign-kpi">
+            <div class="campaign-detail">
+              <h2>KPI</h2>
+              <div class="awareness">
+                <input class="toggle-tab" type="checkbox" id="awareness-toggle">
+                <div class="title">
+                  <label for="awareness-toggle">Awareness</label>
+                </div>
+                <div class="row content">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Reach (Organic/Paid)</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Page View</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Website View</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Video View</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Imporession</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Content Impact</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="custom-kpi-group">
+                    <div class="col-sm-6 item"><span class="remove">Remove</span>
+                      <div class="row">
+                        <div class="col-xs-5 no-margin-right">
+                          <div class="form-group">
+                            <label>KPI Name</label>
+                            <input class="form-control" type="text" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="col-xs-7">
+                          <div class="form-group">
+                            <label>Value</label>
+                            <input class="form-control" type="text" placeholder="Value">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 add-custom-kpi-group">
+                      <label>Add Custom KPI</label><a class="add-custom-kpi" href="#" data-group="awareness">+ Add Custom KPI</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="engagement">
+                <input class="toggle-tab" type="checkbox" id="engagement-toggle">
+                <div class="title">
+                  <label for="engagement-toggle">Engagement</label>
+                </div>
+                <div class="row content">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Reactions (Like/Dislike)</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Comment</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Share</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Retweet</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="custom-kpi-group">
+                    <div class="col-sm-6 item"><span class="remove">Remove</span>
+                      <div class="row">
+                        <div class="col-xs-5 no-margin-right">
+                          <div class="form-group">
+                            <label>KPI Name</label>
+                            <input class="form-control" type="text" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="col-xs-7">
+                          <div class="form-group">
+                            <label>Value</label>
+                            <input class="form-control" type="text" placeholder="Value">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 add-custom-kpi-group">
+                      <label>Add Custom KPI</label><a class="add-custom-kpi" href="#" data-group="engagement">+ Add Custom KPI</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="drivesale">
+                <input class="toggle-tab" type="checkbox" id="drive-sale-toggle">
+                <div class="title">
+                  <label for="drive-sale-toggle">Drive Sale</label>
+                </div>
+                <div class="row content">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Click Link</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Buy Ticket</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Go to Event</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="custom-kpi-group">
+                    <div class="col-sm-6 item"><span class="remove">Remove</span>
+                      <div class="row">
+                        <div class="col-xs-5 no-margin-right">
+                          <div class="form-group">
+                            <label>KPI Name</label>
+                            <input class="form-control" type="text" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="col-xs-7">
+                          <div class="form-group">
+                            <label>Value</label>
+                            <input class="form-control" type="text" placeholder="Value">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 add-custom-kpi-group">
+                      <label>Add Custom KPI</label><a class="add-custom-kpi" href="#" data-group="drivesale">+ Add Custom KPI</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="campaign-influencer">
+            <div class="campaign-detail">
+              <h2>Campaign’s Influencer</h2>
+              <div class="influencer-item">
+                <div class="section-container">
+                  <div class="row border">
+                    <div class="col-xs-2 col-sm-1">
+                      <div class="avatar">
+                        <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Piam BNK48" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                      </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-4">
+                      <p class="name" data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">Phukkhom BNK48</p>
+                      <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website"></i></div>
+                    </div>
+                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6">
+                      <p class="email" data-toggle="tooltip" data-placement="bottom" title="INFO@BNK48.COM"> <i class="fas fa-envelope"></i>INFO@BNK48.COM</p>
+                      <p class="phone"> <i class="fas fa-phone"></i>088-xxxxxxx </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-1">
+                      <div class="manage"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Manage"><i class="fas fa-cog"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-3 border text-center">
+                      <p>Influ. Status</p>
+                      <div class="influ-status-group influ-accept-status" data-status="accepted">
+                        <div class="no-action hidden"><i class="fas fa-minus-circle"></i>No Action</div>
+                        <div class="accepted"> <i class="fas fa-check-circle"></i>Accepted</div>
+                        <div class="proposed hidden"><i class="fas fa-plus-circle"></i>Proposed</div>
+                        <div class="reject hidden"><i class="fas fa-times-circle"></i>Reject</div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 border text-center">
+                      <p>Payment</p>
+                      <div class="influ-status-group influ-payment-group" data-status="down30">
+                        <div class="no-action hidden"><i class="fas fa-minus-circle"></i>No Action</div>
+                        <div class="down30 hidden"><i class="fas fa-check-circle"></i>Down 30%</div>
+                        <div class="down50"><i class="fas fa-check-circle"></i>Down 50%</div>
+                        <div class="pay100 hidden"><i class="fas fa-check-circle"></i>Pay 100%</div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 border text-center">
+                      <p>Work Status</p>
+                      <div class="influ-status-group influ-work-group" data-status="working">
+                        <div class="no-action hidden"><i class="fas fa-minus-circle"></i>No Action</div>
+                        <div class="working"><i class="fas fa-plus-circle"></i>Working</div>
+                        <div class="done hidden"><i class="fas fa-check-circle"></i>Done</div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 border text-center">
+                      <p>Rating</p>
+                      <div class="influ-status-group influ-rating-group" data-status="rate4"><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="add-influencer"><a href="#" data-toggle="modal" data-target="#add-influencer-modal">+Add Influencer</a></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="modal-group">
+      <div class="modal fade" id="editcampaign-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">Campaign Detail</p>
+            </div>
+            <div class="modal-body">
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Cover Photo</label>
+                </div>
+                <div class="col-sm-8 cover-image-edit">
+                  <input class="upload-cover-image" type="file" accept="image/*">
+                  <div class="cover-image-text"><i class="fas fa-cloud-upload-alt"> </i>
+                    <h2>Click to Upload Cover Image</h2>
+                  </div>
+                  <div class="cover-image-preview"></div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Campaign Name*</label>
+                </div>
+                <div class="col-sm-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Description</label>
+                </div>
+                <div class="col-sm-8">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Category</label>
+                </div>
+                <div class="col-sm-8"><i class="fas fa-angle-down for-dropdown"></i>
+                  <select class="form-control">
+                    <option>Technology</option>
+                    <option>Life Style</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Start Date</label>
+                </div>
+                <div class="col-sm-4 date-picker"><i class="far fa-calendar-alt"></i>
+                  <input class="form-control start-date" type="text" data-toggle="datepicker">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">End Date</label>
+                </div>
+                <div class="col-sm-4 date-picker"><i class="far fa-calendar-alt"></i>
+                  <input class="form-control end-date" type="text" data-toggle="datepicker">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Campaign Manager</label>
+                </div>
+                <div class="col-sm-8">
+                  <select class="campaign-manager-select2 form-control" multiple="multiple">
+                    <option>Perth</option>
+                    <option>M</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row"> 
+                <div class="col-sm-4 label-control">
+                  <label for="">Status</label>
+                </div>
+                <div class="col-sm-8"><i class="fas fa-angle-down for-dropdown"></i>
+                  <select class="form-control">
+                    <option>Inprocess</option>
+                    <option>Done</option>
+                    <option>Cancelled</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="secondary-btn" type="button" data-dismiss="modal">Close</button>
+              <button class="primary-btn" type="button">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="add-influencer-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">Add Influencer</p>
+            </div>
+            <div class="modal-body">
+              <div class="simple-filter">
+                <div class="influencer-list-group">
+                  <div class="form-group"><i class="fas fa-angle-down for-dropdown"></i>
+                    <select class="form-control">
+                      <option selected>List by All Influencer</option>
+                      <option>Technology</option>
+                      <option>Life Style</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="influencer-search-box">
+                  <div class="row">
+                    <div class="col-sm-9"> 
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Search Influencer Name">
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <button class="secondary-btn">Search</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-7">
+                    <div class="social-filter-group">
+                      <input type="checkbox" id="filter-facebook">
+                      <label for="filter-facebook"><i class="fab fa-facebook-square" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i></label>
+                      <input type="checkbox" id="filter-instagram">
+                      <label for="filter-instagram"><i class="fab fa-instagram" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i></label>
+                      <input type="checkbox" id="filter-twitter">
+                      <label for="filter-twitter"><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i></label>
+                      <input type="checkbox" id="filter-youtube">
+                      <label for="filter-youtube"><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i></label>
+                      <input type="checkbox" id="filter-mobile">
+                      <label for="filter-mobile"><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i></label>
+                      <input type="checkbox" id="filter-website">
+                      <label for="filter-website"><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website"></i></label>
+                    </div>
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="age-filter"><span>
+                        <label>Age:</label></span>
+                      <input class="form-control" type="number"> - 
+                      <input class="form-control" type="number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="influencer-item-group">
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn hidden">Add</button>
+                    <p class="added">Added</p>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn hidden">Add</button>
+                    <p class="added">Added</p>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn">Add</button>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn">Add</button>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn">Add</button>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn">Add</button>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn">Add</button>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn">Add</button>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn">Add</button>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn">Add</button>
+                  </div>
+                </div>
+                <div class="row item">
+                  <div class="col-xs-8 col-sm-10">
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-1">
+                        <div class="avatar">
+                          <div class="influencer-avatar" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-9 col-sm-11">
+                        <div class="name">
+                          <p data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">(4 <i class="fas fa-star"></i>) Phukkhom BNK48</p>
+                        </div>
+                        <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website">                         </i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-2 add-btn">
+                    <button class="primary-btn">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="secondary-btn" type="button" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="manage-influencer-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">Manage Influencer</p>
+            </div>
+            <div class="modal-body">
+              <div class="influ-info">
+                <div class="section-container">
+                  <div class="row border">
+                    <div class="col-xs-2 col-sm-1">
+                      <div class="avatar">
+                        <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Piam BNK48" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                      </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-4">
+                      <p class="name" data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48">Phukkhom BNK48</p>
+                      <div class="social-status-group"><i class="fab fa-facebook-square active" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i><i class="fab fa-instagram active" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i><i class="fab fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i><i class="fas fa-mobile" data-toggle="tooltip" data-placement="bottom" title="Mobile Application"></i><i class="fas fa-globe" data-toggle="tooltip" data-placement="bottom" title="Website"></i></div>
+                    </div>
+                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6">
+                      <p class="email" data-toggle="tooltip" data-placement="bottom" title="INFO@BNK48.COM"> <i class="fas fa-envelope"></i>INFO@BNK48.COM</p>
+                      <p class="phone"> <i class="fas fa-phone"></i>088-xxxxxxx </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="scrollable-tabbar">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation"><a href="#tab-status" aria-controls="tab-status" role="tab" data-toggle="tab">Influ. Status</a></li>
+                  <li role="presentation"><a href="#tab-brief" aria-controls="tab-brief" role="tab" data-toggle="tab">Brief</a></li>
+                  <li role="presentation"><a href="#tab-payment" aria-controls="tab-payment" role="tab" data-toggle="tab">Payment</a></li>
+                  <li role="presentation"><a href="#tab-works" aria-controls="tab-works" role="tab" data-toggle="tab">Work Status</a></li>
+                  <li class="active" role="presentation"><a href="#tab-rating" aria-controls="tab-rating" role="tab" data-toggle="tab">Rating</a></li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <div class="tab-pane" id="tab-status" role="tabpanel">
+                  <div class="inner-section">
+                    <p>Select Status</p>
+                  </div>
+                  <div class="select-status">
+                    <div class="influ-accept-status">
+                      <label class="no-action"> 
+                        <input type="radio" name="influ-accept-status"><i class="fas fa-minus-circle"></i>No Action
+                      </label>
+                      <label class="accepted">
+                        <input type="radio" name="influ-accept-status"><i class="fas fa-check-circle"></i>Accepted
+                      </label>
+                      <label class="proposed">
+                        <input type="radio" name="influ-accept-status"><i class="fas fa-plus-circle"></i>Proposed 
+                      </label>
+                      <label class="reject">
+                        <input type="radio" name="influ-accept-status"><i class="fas fa-times-circle"></i>Reject
+                      </label>
+                    </div>
+                  </div>
+                  <div class="history">
+                    <div class="inner-section">
+                      <p>History</p>
+                    </div>
+                    <div class="item influ-accept-status">
+                      <p>01/03/2019 - <span class="no-action"><i class="fas fa-minus-circle"></i>No Action</span> </p>
+                      <p>01/03/2019 - <span class="accepted"><i class="fas fa-check-circle"></i>Accepted</span> </p>
+                      <p>01/01/2562 - <span class="proposed"><i class="fas fa-plus-circle"></i>Proposed</span> </p>
+                      <p>01/01/2562 - <span class="reject"><i class="fas fa-times-circle"></i>Reject</span> </p>
+                    </div>
+                    <textarea class="form-control" name="" cols="3"></textarea>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-brief" role="tabpanel">
+                  <div class="inner-section">
+                    <p>Campaign's Brief File</p>
+                  </div>
+                  <div class="select-brief-file">
+                    <label>
+                      <input type="checkbox">
+                      <div class="text">WWDC19_breif_facebook.pptx asdfasdfs <span class="size">(1.4MB)</span></div>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <div class="text">WWDC19_breif_instagram.pptx <span class="size">(1.4MB)</span></div>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <div class="text">WWDC19_breif_twitter.pptx <span class="size">(1.4MB)</span></div>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <div class="text">WWDC19_breif_twitter.pptx <span class="size">(1.4MB)</span></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-payment" role="tabpanel">
+                  <div class="payment-detail">
+                    <div class="inner-section">
+                      <p>Payment Detail</p>
+                    </div>
+                    <div class="content">
+                      <p>รับเงินในนาม: นิติบุคคล/บริษัท <a href="#">ภพ.20</a> <a href="#">หนังสือรับรองบริษัท</a></p>
+                      <p>ธนาคารกสิกรไทย บีเอนเคโฟรตี้เอท (001-01-100-01) <a href="#">หน้าสมุดบัญชี</a></p>
+                    </div>
+                  </div>
+                  <div class="ratecard-detail">
+                    <div class="inner-section">
+                      <p>Rate Card</p>
+                    </div>
+                    <div class="content"><a href="#"> <i class="fab fa-facebook-square"></i>View</a><a href="#"><i class="fab fa-instagram"></i>View</a><a href="#"><i class="fab fa-twitter"></i>View</a><a href="#"><i class="fab fa-youtube"></i>View</a><a href="#"><i class="fas fa-mobile"></i>View</a><a href="#"><i class="fas fa-globe"></i>View</a></div>
+                  </div>
+                  <div class="cost-setup">
+                    <div class="inner-section">
+                      <p>Cost Setup</p>
+                    </div>
+                    <div class="content row">
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <label>Content Post</label>
+                          </div>
+                          <div class="col-xs-6 no-margin-left">
+                            <div class="form-group">
+                              <div class="form-inline">
+                                <div class="input-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                  <div class="input-group-addon">B</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <label>Add Ad. Fee</label>
+                          </div>
+                          <div class="col-xs-6 no-margin-left">
+                            <div class="form-group">
+                              <div class="form-inline">
+                                <div class="input-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                  <div class="input-group-addon">B</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <label>Boost Fee</label>
+                          </div>
+                          <div class="col-xs-6 no-margin-left">
+                            <div class="form-group">
+                              <div class="form-inline">
+                                <div class="input-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                  <div class="input-group-addon">B</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <label>Branded Post</label>
+                          </div>
+                          <div class="col-xs-6 no-margin-left">
+                            <div class="form-group">
+                              <div class="form-inline">
+                                <div class="input-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                  <div class="input-group-addon">B</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <label>Other Cost</label>
+                          </div>
+                          <div class="col-xs-6 no-margin-left">
+                            <div class="form-group">
+                              <div class="form-inline">
+                                <div class="input-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                  <div class="input-group-addon">B</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-6">
+                        <div class="form-group exclude-vat">
+                          <label>
+                            <input type="checkbox">exclude VAT 7%
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-6">
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <label>Exclude Vat 7%</label>
+                          </div>
+                          <div class="col-xs-6 no-margin-left">
+                            <div class="form-group">
+                              <div class="form-inline">
+                                <div class="input-group">
+                                  <input class="form-control" type="text" placeholder="Amount" disabled>
+                                  <div class="input-group-addon">B</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-sm-offset-6">
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <label>Total</label>
+                          </div>
+                          <div class="col-xs-6 no-margin-left">
+                            <div class="form-group">
+                              <div class="form-inline">
+                                <div class="input-group">
+                                  <input class="form-control" type="text" placeholder="Amount" disabled>
+                                  <div class="input-group-addon">B</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-setup">
+                    <div class="inner-section">
+                      <p>Payment Setup</p>
+                    </div>
+                    <div class="content">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <div class="col-xs-5">
+                              <label>ค่าจ้าง</label>
+                            </div>
+                            <div class="col-xs-7 no-margin-left">
+                              <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Amount">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <div class="col-xs-5">
+                              <label>วิธีจ่ายเงิน</label>
+                            </div>
+                            <div class="col-xs-7 no-margin-left">
+                              <div class="form-group"><i class="fas fa-angle-down for-dropdown"></i>
+                                <select class="form-control payment-method">
+                                  <option disabled selected>กรุณาเลือก</option>
+                                  <option value="v3070">30%/70%</option>
+                                  <option value="v5050">50%/50%</option>
+                                  <option value="v100">จ่ายก่อน 100%</option>
+                                  <option value="vcredit">Credit 30 วัน</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="group-30-70 upload-slip-section hidden">
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>30%</label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="form-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>
+                                  <input type="checkbox">จ่ายแล้ว
+                                </label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="upload-file-section">
+                                  <div class="upload-slip">
+                                    <input type="file"><a class="view hidden" href="#">View</a><a class="upload" href="#">Upload</a>
+                                    <div class="clearfix"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>70%</label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="form-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>
+                                  <input type="checkbox">จ่ายแล้ว
+                                </label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="upload-file-section">
+                                  <div class="upload-slip">
+                                    <input type="file"><a class="view hidden" href="#">View</a><a class="upload" href="#">Upload</a>
+                                    <div class="clearfix"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="group-50-50 upload-slip-section hidden">
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>50%</label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="form-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>
+                                  <input type="checkbox">จ่ายแล้ว
+                                </label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="upload-file-section">
+                                  <div class="upload-slip">
+                                    <input type="file"><a class="view hidden" href="#">View</a><a class="upload" href="#">Upload</a>
+                                    <div class="clearfix"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>50%</label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="form-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>
+                                  <input type="checkbox">จ่ายแล้ว
+                                </label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="upload-file-section">
+                                  <div class="upload-slip">
+                                    <input type="file"><a class="view hidden" href="#">View</a><a class="upload" href="#">Upload</a>
+                                    <div class="clearfix"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="group-100 upload-slip-section hidden">
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>100%</label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="form-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>
+                                  <input type="checkbox">จ่ายแล้ว
+                                </label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="upload-file-section">
+                                  <div class="upload-slip">
+                                    <input type="file"><a class="view hidden" href="#">View</a><a class="upload" href="#">Upload</a>
+                                    <div class="clearfix"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="group-credit upload-slip-section hidden">
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>Credit</label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="form-group">
+                                  <input class="form-control" type="text" placeholder="Amount">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-5">
+                                <label>
+                                  <input type="checkbox">จ่ายแล้ว
+                                </label>
+                              </div>
+                              <div class="col-xs-7 no-margin-left">
+                                <div class="upload-file-section">
+                                  <div class="upload-slip">
+                                    <input type="file"><a class="view hidden" href="#">View</a><a class="upload" href="#">Upload</a>
+                                    <div class="clearfix"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inner-section">
+                    <p>Select Status</p>
+                  </div>
+                  <div class="select-status">
+                    <div class="influ-payment-group group-30-70 hidden">
+                      <label class="no-action"> 
+                        <input type="radio" name="influ-payment-group"><i class="fas fa-minus-circle"></i>No Action
+                      </label>
+                      <label class="down30">
+                        <input type="radio" name="influ-payment-group"><i class="fas fa-check-circle"></i>Down 30%
+                      </label>
+                      <label class="pay100">
+                        <input type="radio" name="influ-payment-group"><i class="fas fa-check-circle"></i>Pay 100%
+                      </label>
+                    </div>
+                    <div class="influ-payment-group group-50-50 hidden">
+                      <label class="no-action"> 
+                        <input type="radio" name="influ-payment-group"><i class="fas fa-minus-circle"></i>No Action
+                      </label>
+                      <label class="down50">
+                        <input type="radio" name="influ-payment-group"><i class="fas fa-check-circle"></i>Down 50% 
+                      </label>
+                      <label class="pay100">
+                        <input type="radio" name="influ-payment-group"><i class="fas fa-check-circle"></i>Pay 100%
+                      </label>
+                    </div>
+                    <div class="influ-payment-group group-100 hidden">
+                      <label class="no-action"> 
+                        <input type="radio" name="influ-payment-group"><i class="fas fa-minus-circle"></i>No Action
+                      </label>
+                      <label class="pay100">
+                        <input type="radio" name="influ-payment-group"><i class="fas fa-check-circle"></i>Pay 100%
+                      </label>
+                    </div>
+                  </div>
+                  <div class="history">
+                    <div class="inner-section">
+                      <p>History</p>
+                    </div>
+                    <div class="item influ-payment-group">
+                      <p>01/03/2019 - <span class="no-action"><i class="fas fa-minus-circle"></i>No Action</span> </p>
+                      <p>01/03/2019 - <span class="down30"><i class="fas fa-check-circle"></i>Down 30%</span> </p>
+                      <p>01/01/2562 - <span class="down50"><i class="fas fa-check-circle"></i>Down 50%</span> </p>
+                      <p>01/01/2562 - <span class="pay100"><i class="fas fa-check-circle"></i>Pay 100%</span></p>
+                    </div>
+                    <textarea class="form-control" name="" cols="3"></textarea>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-works" role="tabpanel">
+                  <div class="inner-section">
+                    <p>Timeline</p>
+                  </div>
+                  <div class="influencer-timeline">
+                    <h2>Campaign Timeline</h2>
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <label>Date</label>
+                      </div>
+                      <div class="col-xs-8">
+                        <label>Title</label>
+                      </div>
+                    </div>
+                    <div class="timeline-group">
+                      <div class="row item with-close">
+                        <div class="col-xs-4 no-margin-right">
+                          <div class="form-group date-picker"><i class="far fa-calendar-alt"></i>
+                            <input class="form-control" type="text" data-toggle="datepicker">
+                          </div>
+                        </div>
+                        <div class="col-xs-8">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <input class="form-control" type="text">
+                              <div class="input-group-addon"><a class="close" href="#"><i class="fas fa-times"></i></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group"><a class="add-new" href="#">+ Add Timeline</a></div>
+                  </div>
+                  <div class="work-progress-group">
+                    <div class="inner-section">
+                      <p>Working Progress</p>
+                    </div>
+                    <div class="content">
+                      <div class="working-group">
+                        <div class="item with-close">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <input class="form-control auto-select" type="text">
+                              <div class="input-group-addon"><a class="close" href="#"><i class="fas fa-times"></i></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group"><a class="add-new" href="#">+ Add Link</a></div>
+                    </div>
+                  </div>
+                  <div class="inner-section">
+                    <p>Select Status</p>
+                  </div>
+                  <div class="select-status">
+                    <div class="influ-work-group">
+                      <label class="no-action"> 
+                        <input type="radio" name="influ-works-group"><i class="fas fa-minus-circle"></i>No Action
+                      </label>
+                      <label class="working">
+                        <input type="radio" name="influ-works-group"><i class="fas fa-plus-circle"></i>Working
+                      </label>
+                      <label class="done">
+                        <input type="radio" name="influ-works-group"><i class="fas fa-check-circle"></i>Done
+                      </label>
+                    </div>
+                  </div>
+                  <div class="history">
+                    <div class="inner-section">
+                      <p>History</p>
+                    </div>
+                    <div class="item influ-work-group">
+                      <p>01/03/2019 - <span class="no-action"><i class="fas fa-minus-circle"></i>No Action</span> </p>
+                      <p>01/03/2019 - <span class="working"><i class="fas fa-plus-circle"></i>Working</span> </p>
+                      <p>01/01/2562 - <span class="done"><i class="fas fa-check-circle"></i>Done</span> </p>
+                    </div>
+                    <textarea class="form-control" name="" cols="3"></textarea>
+                  </div>
+                </div>
+                <div class="active tab-pane" id="tab-rating" role="tabpanel">
+                  <div class="submit-section-group">
+                    <div class="inner-section">
+                      <p>Submit Comment & Ratting</p>
+                    </div>
+                    <div class="content">
+                      <div class="row">
+                        <div class="col-sm-3 set-text-align">
+                          <label>Rating</label>
+                        </div>
+                        <div class="col-sm-9">
+                          <div class="rating-stars">
+                            <ul id="stars">
+                              <li class="star" title="Poor" data-value="1"><i class="fa fa-star fa-fw"></i></li>
+                              <li class="star" title="Fair" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                              <li class="star" title="Good" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                              <li class="star" title="Excellent" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                              <li class="star" title="WOW!!!" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3 set-text-align">
+                          <label>Comment</label>
+                        </div>
+                        <div class="col-sm-9">
+                          <div class="form-group">
+                            <textarea class="form-control" rows="3"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-9"><a class="primary-btn" href="#">Submit</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overall-rating-group">
+                    <div class="inner-section">
+                      <p>Overall Rating & Comment</p>
+                    </div>
+                    <div class="content">
+                      <label>Rating</label>
+                      <div class="row">
+                        <div class="col-xs-2">
+                          <h1>4.2</h1>
+                        </div>
+                        <div class="col-xs-10">
+                          <div class="star-group"><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star"></i></div>
+                        </div>
+                      </div>
+                      <div class="top-section">
+                        <label class="float-left">Comment</label>
+                        <div class="float-right"> 
+                          <p>จัดเรียงตาม</p>
+                          <div class="form-group">
+                            <input type="radio" name="sorting-rating" id="increase" checked>
+                            <label for="increase">มากไปน้อย</label>
+                          </div>
+                          <div class="form-group">
+                            <input type="radio" name="sorting-rating" id="decrease">
+                            <label for="decrease">น้อยไปมาก</label>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="comment-list">
+                        <div class="item row">
+                          <div class="col-sm-3 set-text-align">
+                            <p class="date">01/01/2019</p>
+                            <p class="name">Admin</p>
+                          </div>
+                          <div class="col-sm-8">
+                            <p class="comment">ทำงานเรียบร้อยดีค่ะ</p>
+                            <div class="star-group"><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star"></i></div>
+                          </div>
+                        </div>
+                        <div class="item row">
+                          <div class="col-sm-3 set-text-align">
+                            <p class="date">01/01/2019</p>
+                            <p class="name">Admin</p>
+                          </div>
+                          <div class="col-sm-8">
+                            <p class="comment">ทำงานเรียบร้อยดีค่ะ</p>
+                            <div class="star-group"><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star"></i></div>
+                          </div>
+                        </div>
+                        <div class="item row">
+                          <div class="col-sm-3 set-text-align">
+                            <p class="date">01/01/2019</p>
+                            <p class="name">Admin</p>
+                          </div>
+                          <div class="col-sm-8">
+                            <p class="comment">ทำงานเรียบร้อยดีค่ะ</p>
+                            <div class="star-group"><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star"></i></div>
+                          </div>
+                        </div>
+                        <div class="item row">
+                          <div class="col-sm-3 set-text-align">
+                            <p class="date">01/01/2019</p>
+                            <p class="name">Admin</p>
+                          </div>
+                          <div class="col-sm-8">
+                            <p class="comment">ทำงานเรียบร้อยดีค่ะ</p>
+                            <div class="star-group"><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star"></i></div>
+                          </div>
+                        </div>
+                        <div class="item row">
+                          <div class="col-sm-3 set-text-align">
+                            <p class="date">01/01/2019</p>
+                            <p class="name">Admin</p>
+                          </div>
+                          <div class="col-sm-8">
+                            <p class="comment">ทำงานเรียบร้อยดีค่ะ</p>
+                            <div class="star-group"><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <p>pagination</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="secondary-btn" type="button" data-dismiss="modal">Close</button>
+              <button class="primary-btn" type="button">Save All Tab</button><a class="remove" href="#">Remove</a>
+            </div>
+            <div class="remove-section">
+              <p>Do you want to remove this Influencer ?<span class="yes" data-dismiss="modal">Yes</span><span class="no">No</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script src="https://kit.fontawesome.com/9d6d1325c7.js"></script>
+  </body>
+</html>

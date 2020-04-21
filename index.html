@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>MoonShot.co.th</title>
+    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,700&amp;display=swap&amp;subset=thai" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    -->
+  </head>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid"> 
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#top-navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="./IMG_URL/logo.png"></a><a class="notification" href="#"> <i class="fas fa-bell"></i><span class="number">99+</span></a>
+          <div class="notification-popup hidden">
+            <div class="header">
+              <p class="title">Notificaions</p>
+              <p class="clear"><a href="#">Clear</a></p>
+              <div class="clearfix"></div>
+            </div>
+            <div class="item-group">
+              <div class="item">
+                <p><strong>เปิดตัวโทรศัพท์มือถือ</strong></p>
+                <p>1 Day Remaining</p>
+              </div>
+              <div class="item">
+                <p><strong>เปิดตัวโทรศัพท์มือถือ</strong></p>
+                <p>3 Day Remaining</p>
+              </div>
+              <div class="item">
+                <p><strong>เปิดตัวโทรศัพท์มือถือ</strong></p>
+                <p>5 Day Remaining</p>
+              </div>
+            </div>
+            <div class="footer"><a class="close-popup" href="#">Close</a></div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="top-navbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Campaign </a></li>
+            <li><a href="#">Influencer</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./index.html">Logout</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse-->
+        <!-- /.container-fluid-->
+      </div>
+    </nav>
+  </header>
+  <body id="campaign">
+    <div class="container">
+      <section class="header-group clearfix">
+        <h1>Campaign</h1><a class="primary-btn" href="#" data-toggle="modal" data-target="#editcampaign-modal">New Campaign   </a>
+      </section>
+      <input type="checkbox" id="toggle-filter" hidden>
+      <label class="toggle-filter" for="toggle-filter">Show Filter<i class="fas fa-filter"> </i></label>
+      <section class="toolbar-group">        
+        <div class="row">
+          <div class="col-sm-9 col-md-8">
+            <p class="label-for-mobile">Search</p>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Search Campaign Name">
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-4">
+            <p class="label-for-mobile">Status</p>
+            <div class="form-group"><i class="fas fa-angle-down for-dropdown"></i>
+              <select class="form-control">
+                <option selected>All Status</option>
+                <option>Done</option>
+                <option>Cancelled</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="list-title capsule-style">
+          <p class="label-for-mobile">Sort by</p>
+          <div class="row">
+            <div class="col-sm-9 col-md-8">
+              <input type="radio" name="campaign-list-sort-type" id="campaign-list-sort-name" hidden>
+              <label for="campaign-list-sort-name">Name<i class="fas fa-angle-down"> </i></label>
+            </div>
+            <div class="col-sm-3 col-md-4">
+              <input type="radio" name="campaign-list-sort-type" id="campaign-list-sort-duedate" hidden checked>
+              <label for="campaign-list-sort-duedate">Due Date<i class="fas fa-angle-down"> </i></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="campaign-list">
+        <div class="campaign-list-group capsule-style">
+          <p class="label-for-mobile">Campaign List</p><a class="item" href="./campaign-detail.html">
+            <div class="row">
+              <div class="col-sm-2 col-md-2 campaign-cover-image" style="background-image:url('./IMG_URL/campaign-image-placeholder.png')">
+                <div class="category" data-toggle="tooltip" data-placement="bottom" title="MoonShot">MoonShot</div>
+              </div>
+              <div class="col-sm-7 col-md-6 campaign-title">
+                <h2 data-toggle="tooltip" data-placement="bottom" title="เปิดตัวโทรศัพท์มือถือ">เปิดตัวโทรศัพท์มือถือ</h2>
+                <div class="influencer-group">
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Piam BNK48" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Cherprang BNK48" style="background-image:url('./IMG_URL/TEMP/avt2.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Music BNK48" style="background-image:url('./IMG_URL/TEMP/avt3.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48" style="background-image:url('./IMG_URL/TEMP/avt4.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-4 campaign-date">
+                <div class="middle-content">
+                  <h2 class="campaign-status inprocess">inprocess</h2>
+                  <p class="duration">03/06/2019 - 07/06/2019 </p>
+                  <div class="date-status normal">
+                    <p class="title">ส่งงาน Final Works</p>
+                    <p class="date">03/06/2019 </p>
+                  </div>
+                </div>
+              </div>
+            </div></a><a class="item" href="#">
+            <div class="row">
+              <div class="col-sm-2 col-md-2 campaign-cover-image" style="background-image:url('./IMG_URL/campaign-image-placeholder.png')">
+                <div class="category" data-toggle="tooltip" data-placement="bottom" title="MoonShot">MoonShot</div>
+              </div>
+              <div class="col-sm-7 col-md-6 campaign-title">
+                <h2 data-toggle="tooltip" data-placement="bottom" title="เปิดตัวโทรศัพท์มือถือ">เปิดตัวโทรศัพท์มือถือ</h2>
+                <div class="influencer-group">
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Piam BNK48" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Cherprang BNK48" style="background-image:url('./IMG_URL/TEMP/avt2.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Music BNK48" style="background-image:url('./IMG_URL/TEMP/avt3.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48" style="background-image:url('./IMG_URL/TEMP/avt4.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-4 campaign-date">
+                <div class="middle-content">
+                  <h2 class="campaign-status inprocess">inprocess</h2>
+                  <p class="duration">03/06/2019 - 07/06/2019 </p>
+                  <div class="date-status warning">
+                    <p class="title">ส่งงาน Final Works</p>
+                    <p class="date">04/06/2019</p>
+                  </div>
+                </div>
+              </div>
+            </div></a><a class="item" href="#">
+            <div class="row">
+              <div class="col-sm-2 col-md-2 campaign-cover-image" style="background-image:url('./IMG_URL/campaign-image-placeholder.png')">
+                <div class="category" data-toggle="tooltip" data-placement="bottom" title="MoonShot">MoonShot</div>
+              </div>
+              <div class="col-sm-7 col-md-6 campaign-title">
+                <h2 data-toggle="tooltip" data-placement="bottom" title="เปิดตัวโทรศัพท์มือถือ">เปิดตัวโทรศัพท์มือถือ</h2>
+                <div class="influencer-group">
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Piam BNK48" style="background-image:url('./IMG_URL/TEMP/avt1.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Cherprang BNK48" style="background-image:url('./IMG_URL/TEMP/avt2.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Music BNK48" style="background-image:url('./IMG_URL/TEMP/avt3.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Phukkhom BNK48" style="background-image:url('./IMG_URL/TEMP/avt4.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-4 campaign-date">
+                <div class="middle-content">
+                  <h2 class="campaign-status inprocess">inprocess</h2>
+                  <p class="duration">03/06/2019 - 07/06/2019 </p>
+                  <div class="date-status danger">
+                    <p class="title">ส่งงาน Final Works</p>
+                    <p class="date">07/06/2019</p>
+                  </div>
+                </div>
+              </div>
+            </div></a><a class="item" href="#">
+            <div class="row">
+              <div class="col-sm-2 col-md-2 campaign-cover-image" style="background-image:url('./IMG_URL/campaign-image-placeholder.png')">
+                <div class="category" data-toggle="tooltip" data-placement="bottom" title="Life Style">Life Style</div>
+              </div>
+              <div class="col-sm-7 col-md-6 campaign-title">
+                <h2 data-toggle="tooltip" data-placement="bottom" title="ลอยกระทง ตามประทีป ศูนย์ศิลปาชพี บางไทรฯ ประจำปี 2559">
+                   ลอยกระทง ตามประทีป ศูนย์ศิลปาชพี บางไทรฯ ประจำปี 2561</h2>
+                <div class="influencer-group">
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-4 campaign-date">
+                <div class="middle-content">
+                  <h2 class="campaign-status done">DONE</h2>
+                  <p class="duration">03/06/2019 - 07/06/2019 </p>
+                  <div class="date-status">
+                    <p class="title">ส่งงาน Final Works</p>
+                    <p class="date">07/06/2019</p>
+                  </div>
+                </div>
+              </div>
+            </div></a><a class="item" href="#">
+            <div class="row">
+              <div class="col-sm-2 col-md-2 campaign-cover-image" style="background-image:url('./IMG_URL/campaign-image-placeholder.png')">
+                <div class="category" data-toggle="tooltip" data-placement="bottom" title="Public Event">Public Event</div>
+              </div>
+              <div class="col-sm-7 col-md-6 campaign-title">
+                <h2 data-toggle="tooltip" data-placement="bottom" title="เลือกตั้ง 2561">เลือกตั้ง 2561</h2>
+                <div class="influencer-group">
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                  <div class="influencer-avatar" data-toggle="tooltip" data-placement="bottom" title="Influencer Name" style="background-image:url('./IMG_URL/avatar-default.png')"></div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-4 campaign-date">
+                <div class="middle-content">
+                  <h2 class="campaign-status cancelled">cancelled</h2>
+                  <p class="duration">03/06/2018 - 07/06/2018</p>
+                  <div class="date-status">
+                    <p class="title">ส่งงาน Final Works</p>
+                    <p class="date">07/06/2019</p>
+                  </div>
+                </div>
+              </div>
+            </div></a>
+        </div>
+      </section>
+    </div>
+    <div id="modal-group">
+      <div class="modal fade" id="editcampaign-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">Campaign Detail</p>
+            </div>
+            <div class="modal-body"> 
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Cover Photo</label>
+                </div>
+                <div class="col-sm-8 cover-image-edit">
+                  <input class="upload-cover-image" type="file" accept="image/*">
+                  <div class="cover-image-text"><i class="fas fa-cloud-upload-alt"> </i>
+                    <h2>Click to Upload Cover Image</h2>
+                  </div>
+                  <div class="cover-image-preview"></div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Campaign Name*</label>
+                </div>
+                <div class="col-sm-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Description</label>
+                </div>
+                <div class="col-sm-8">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Category</label>
+                </div>
+                <div class="col-sm-8"><i class="fas fa-angle-down for-dropdown"></i>
+                  <select class="form-control">
+                    <option>Technology</option>
+                    <option>Life Style</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Start Date</label>
+                </div>
+                <div class="col-sm-4 date-picker"><i class="far fa-calendar-alt"></i>
+                  <input class="form-control start-date" type="text" data-toggle="datepicker">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">End Date</label>
+                </div>
+                <div class="col-sm-4 date-picker"><i class="far fa-calendar-alt"></i>
+                  <input class="form-control end-date" type="text" data-toggle="datepicker">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 label-control">
+                  <label for="">Campaign Manager</label>
+                </div>
+                <div class="col-sm-8">
+                  <select class="campaign-manager-select2 form-control" multiple="multiple">
+                    <option>Perth</option>
+                    <option>M</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row"> 
+                <div class="col-sm-4 label-control">
+                  <label for="">Status</label>
+                </div>
+                <div class="col-sm-8"><i class="fas fa-angle-down for-dropdown"></i>
+                  <select class="form-control">
+                    <option>Inprocess</option>
+                    <option>Done</option>
+                    <option>Cancelled</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="secondary-btn" type="button" data-dismiss="modal">Close</button>
+              <button class="primary-btn" type="button">Save      </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script src="https://kit.fontawesome.com/9d6d1325c7.js"></script>
+  </body>
+</html>
